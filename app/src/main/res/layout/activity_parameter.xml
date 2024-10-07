@@ -6,34 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".ParameterActivity">
 
-    <include
-        android:id="@+id/toolbarIn"
-        layout="@layout/toolbar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainTb"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_primary"
+        app:titleTextColor="@color/design_default_color_on_primary"
+        app:subtitleTextColor="@color/design_default_color_on_primary"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <EditText
-        android:id="@+id/parameterEt"
+        android:id="@+id/parametroEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="@string/parameter"
-        android:textSize="25sp"
+        android:hint="Entre com o parâmetro!"
+        android:inputType="textUri"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbarIn" />
+        app:layout_constraintTop_toBottomOf="@id/mainTb" />
 
     <Button
-        android:id="@+id/returnCloseBt"
+        android:id="@+id/enviarParametroBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="@string/return_and_close"
+        android:text="Enviar parâmetro"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/parametroEt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/parameterEt" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

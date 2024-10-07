@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "br.edu.scl.ifsp.sdm.intents"
-        minSdk = 19
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"

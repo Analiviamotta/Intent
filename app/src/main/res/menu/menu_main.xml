@@ -2,27 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="@string/implicit_intents"
+        android:id="@+id/viewMi"
+        android:icon="@drawable/ic_navegador"
+        android:title="Abrir navegador"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Outras intents"
         app:showAsAction="never">
         <menu>
             <item
-                android:id="@+id/openActivityMi"
-                android:title="@string/open_activity" />
-            <item
-                android:id="@+id/viewMi"
-                android:title="@string/open_the_browser" />
-            <item
                 android:id="@+id/callMi"
-                android:title="@string/call_a_number" />
+                android:title="Chamar número" />
             <item
                 android:id="@+id/dialMi"
-                android:title="@string/open_the_dialer" />
+                android:title="Abrir discador" />
             <item
                 android:id="@+id/pickMi"
-                android:title="@string/pick_an_image" />
+                android:title="Pegar imagem" />
             <item
                 android:id="@+id/chooserMi"
-                android:title="@string/choose_a_viewer" />
+                android:title="Selecionar app " />
         </menu>
     </item>
 </menu>
